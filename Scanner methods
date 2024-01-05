@@ -1,0 +1,29 @@
+//Reading Integers:
+nextInt(): Reads the next integer from the input.
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter an integer: ");
+int num = scanner.nextInt();
+
+//REading Doubles:
+nextDouble(): Reads the next double from the input.
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a double: ");
+double num = scanner.nextDouble();
+
+//Reading Strings:
+next(): Reads the next token (word) from the input.
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a word: ");
+String word = scanner.next();
+
+//Reading Characters:
+next().charAt(0): Reads the first character of the next token.
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a character: ");
+char character = scanner.next().charAt(0);
+
+//Reading Booleans:
+nextBoolean(): Reads the next boolean value from the input.
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a boolean value (true/false): ");
+boolean isTrue = scanner.nextBoolean();
