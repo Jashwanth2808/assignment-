@@ -1,0 +1,65 @@
+OverLoading Method:
+-->Method overloading is a compile-time polymorphism.
+-->helps to increase the readability of the program.
+-->It occurs within the class.
+-->may or may not require inheritance.
+-->methods must have the same name and different signatures.
+Eg:
+// Method Overloading
+import java.io.*;
+class MethodOverloadingEx {
+	static int add(int a, int b) 
+ { 
+   return a + b;
+ }
+	static int add(int a, int b, int c)
+	{
+		return a + b + c;
+	}
+	public static void main(String args[])
+	{
+		System.out.println("add() with 2 parameters");
+		System.out.println(add(4, 6));
+		System.out.println("add() with 3 parameters");
+		System.out.println(add(4, 6, 7));
+	}
+}
+
+// Overriding Method:
+-->overriding is a run-time polymorphism.
+-->overriding is used to grant the specific implementation of the method which is already provided by its parent class or superclass.
+-->It is performed in two classes with inheritance relationships.
+-->always needs inheritance.
+-->methods must have the same name and same signature.
+Eg:
+// Method Overriding
+import java.io.*;
+class Animal {
+	void eat()
+	{
+		System.out.println("eat() method of base class");
+		System.out.println("eating.");
+	}
+}
+
+class Dog extends Animal {
+	void eat()
+	{
+		System.out.println("eat() method of derived class");
+		System.out.println("Dog is eating.");
+	}
+}
+
+class MethodOverridingEx {
+	public static void main(String args[])
+	{
+		Dog d1 = new Dog();
+		Animal a1 = new Animal();
+		d1.eat();
+		a1.eat();
+		Animal animal = new Dog();
+		animal.eat();
+	}
+}
+
+
