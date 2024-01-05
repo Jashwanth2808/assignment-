@@ -1,0 +1,20 @@
+There are several ways to create a string objects in java:
+So,some common ways are:
+
+1.int length(): Returns the number of characters in the String 
+
+2. Char charAt(int i): Returns the character at ith index. 
+
+3. String substring (int i):  Return the substring from the ith index character to end 
+
+4. String substring (int i, int j): Returns the substring from i to j-1 index 
+
+5. String concat( String str): Concatenates specified string to the end of this string. 
+
+6. int indexOf (String s): Returns the index within the string of the first occurrence of the specified string.
+
+7. String toUpperCase(): Converts all the characters in the String to upper case. 
+
+8.String replace (char oldChar, char newChar): Returns new string by replacing all occurrences of oldChar with newChar. 
+
+9.String trim(): Returns the copy of the String, by removing whitespaces at both ends. It does not affect whitespaces in the middle. 
