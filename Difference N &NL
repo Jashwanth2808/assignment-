@@ -1,0 +1,19 @@
+-->next():
+> The next() method reads the next token (word) from the input until it encounters a whitespace (space, tab, or newline).
+> It does not include the whitespace character in the returned string.
+> After reading the token, the scanner remains at the beginning of the next line.
+  
+Example:
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a sentence: ");
+String word = scanner.next();
+
+-->nextLine():
+> The nextLine() method reads the entire line from the input, including any spaces until the end of the line.
+> It returns the input as a string, including the newline character at the end.
+> After reading the line, the scanner moves to the beginning of the next line.
+  
+Example:
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a sentence: ");
+String sentence = scanner.nextLine();
