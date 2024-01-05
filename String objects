@@ -1,0 +1,51 @@
+Using String Literal:
+
+The most common and straightforward way is by using string literals.
+java
+Copy code
+String str1 = "Hello, World!";
+Using the new Keyword:
+
+You can use the new keyword to create a String object explicitly.
+java
+Copy code
+String str2 = new String("Hello, World!");
+Using the String(char[] value) Constructor:
+
+You can create a String object from a character array.
+java
+Copy code
+char[] charArray = {'H', 'e', 'l', 'l', 'o'};
+String str3 = new String(charArray);
+Using the String(byte[] bytes) Constructor:
+
+You can create a String object from a byte array, specifying the character encoding.
+java
+Copy code
+byte[] byteArray = {72, 101, 108, 108, 111}; // ASCII values for 'Hello'
+String str4 = new String(byteArray);
+Using the StringBuffer or StringBuilder Class:
+
+You can use StringBuffer or StringBuilder and then convert it to a String.
+java
+Copy code
+StringBuffer stringBuffer = new StringBuffer("Hello");
+String str5 = stringBuffer.toString();
+Using String.format() Method:
+
+You can use the String.format() method to create a formatted string.
+java
+Copy code
+String str6 = String.format("Hello, %s!", "World");
+Using String.concat() Method:
+
+You can use the concat() method to concatenate strings.
+java
+Copy code
+String str7 = "Hello".concat(", World!");
+Using String.join() Method (Java 8 and later):
+
+You can use the String.join() method to concatenate multiple strings.
+java
+Copy code
+String str8 = String.join(", ", "Hello", "World");
